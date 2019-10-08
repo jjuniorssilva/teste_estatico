@@ -39,7 +39,7 @@ margin-top: 10px;
 
 body{
 	background-color: rgb(10,18,32);
-	background-image: url("img/back2.png");
+	background-image: url("back2.png");
 	background-repeat: no-repeat;
 	background-position: center; /* Center the image */
     background-size: cover;
@@ -51,7 +51,7 @@ body{
 
 @font-face {
 font-family: 'display';
-src: url('font/font.ttf') format('truetype');
+src: url('font.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
