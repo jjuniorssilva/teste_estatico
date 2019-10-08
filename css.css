@@ -1,0 +1,57 @@
+.button_green {
+  width: 80%;
+  height: 70px;
+  border-radius: none;
+  background:none;
+  border: 1.5px solid rgb(35,229,178);
+  color:rgb(35,229,178);
+  font-size:18px;
+}
+.button_red {
+	margin-top: 10px;
+  width: 80%;
+  height: 70px;
+  border-radius: none;
+  background:none;
+  border: 1.5px solid #dc2121;
+  color:#dc2121;
+  font-size:18px;
+}
+.button_yellow {
+margin-top: 10px;
+  width: 39.5%;
+  height: 70px;
+  border-radius: none;
+  background:none;
+  border: 1.5px solid #d6ea29;
+  color:#d6ea29;
+  font-size:18px;
+}
+.button_white {
+  width: 39.5%;
+  height: 70px;
+  border-radius: none;
+  background:none;
+  border: 1.5px solid white;
+  color:white;
+  font-size:18px;
+}
+
+body{
+	background-color: rgb(10,18,32);
+	background-image: url("img/back2.png");
+	background-repeat: no-repeat;
+	background-position: center; /* Center the image */
+    background-size: cover;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+
+
+@font-face {
+font-family: 'display';
+src: url('font/font.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}

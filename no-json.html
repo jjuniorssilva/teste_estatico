@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+ <link rel="stylesheet" type="text/css" href="css.css">
+ <script type="text/javascript" src="FileSaver.min.js"></script>
+ <script type="text/javascript" src="jquery.js"></script>
+ <script type="text/javascript" src="control.js"></script>
+</head>
+<title>Servidor Teste Estático</title>
+<body>
+<div style="text-align: center;background: black;margin-top: -8px;width: 102%;margin-left: -1%;height: 80px"> <img src="img/favicon.png" width="60px" style="margin-left:-220px"><p style="margin-left: 90px;color: white;margin-top: -45px; font-size: 25px;color:#23e5b2">Sistema de Teste Estático<p></div>
+
+<div style="float: right;width: 40%;text-align:center;">
+  <div style="background-color: rgba(0, 0, 0, 0.8);height: 400px;margin-top:55px;width: 90%;margin-left: 5%;padding: 1px">
+    <form style="margin-top: 30px">
+      <input type="BUTTON" class="button_green" value="Começar" onclick="verific()">
+      <input type="BUTTON" class="button_yellow" value="Carregar" onclick="">
+      <input type="BUTTON" class="button_white" value="Finalizar" onclick="">
+      <input type="BUTTON" class="button_red" value="Parar Contagem" onclick="key()">
+    </form>
+    <p style="color: white; margin-top: 20px;font-size: 20px">Teclas atalho:</p>
+    <div style="width:50%; float: left;margin-top: 10px">
+      <p style="color: white;margin-top: -15px"><i style="color:#23e5b2">C</i> - Carregar Capacitores</p>
+      <p style="color: white;margin-top: -15px"><i style="color:#23e5b2">F</i> - Finalizar</p>
+    </div>
+
+    <div style="width: 50%;float: right;margin-top: 10px;">
+      <p style="color: white;margin-top: -15px"><i style="color:#23e5b2">Space</i> - Cancelar Contagem</p>
+      <p style="color: white;margin-top: -15px"><i style="color:#23e5b2">G</i> - Começar Contagem</p>
+    </div>
+    
+  </div>
+   <div style="font-size: 1.2em;color: white;padding: 5px ;height: 60px;background: black; margin-top: 10px; width: 50%;margin-left: 50%"><img src="img/PRD.png" width="60px" style="float: left;margin-left: 5px;"><p> Potiguar Rocket Desing</p></div>
+</div>
+
+
+<div style="float: left;width: 60%;">
+
+  
+  <div style="height: 25px;margin-left: 10%; background: rgb(53, 165, 139);margin-top:50px;font-size: 20px;text-align: center;">Contagem Regressiva</div>
+  <div style="margin-left: 10%; background: rgba(0, 0, 0, 0.74);;font-size: 40px;text-align: center;height: 100px;padding: 1px"><p id="cont"></p></div>
+
+  <div style="width: 29%;margin-left: 10%; background:  rgb(53, 165, 139);margin-top:10px;font-size: 20px;text-align: center;">Status de Lançamento</div>
+  <div style="width: 29%;margin-left: 10%; background: rgba(0, 0, 0, 0.74);;font-size: 20px;text-align: center;height: 100px;padding: 1px"><p id="status"></p></div>
+
+  <div style="width: 29%;margin-left: 10%; background:  rgb(53, 165, 139);margin-top:-122px;margin-left: 40.5%;font-size: 20px;text-align: center;">Capacitores</div>
+  <div style="width: 29%;margin-left: 10%; background: rgba(0, 0, 0, 0.74);;font-size: 20px;margin-left: 40.5%;text-align: center;height: 100px;padding: 1px"><p id="cap"></p></div>
+  
+  <div style="width: 29%;margin-left: 10%; background: rgb(53, 165, 139);margin-top:-122px;margin-left: 71%;font-size: 20px;text-align: center;">Chave</div>
+  <div style="width: 29%;margin-left: 10%; background: rgba(0, 0, 0, 0.74);;font-size: 20px;margin-left: 71%;text-align: center;height: 100px;color: white;padding: 1px"><p id="key"><p></div>
+
+  <div style="margin-left: 10%; background:rgb(53, 165, 139);margin-top:10px;font-size: 20px;text-align: center;">Log</div>
+  <div style="overflow-y: auto;margin-left: 10%;background:rgba(0, 0, 0, 0.74);;height: 150px;padding: 1px;">
+    <ul id="list" style="list-style-type: none;">
+      
+    </ul>
+  </div>
+  
+</div>
+
+
+
+</body>
+</html>
