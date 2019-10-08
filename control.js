@@ -31,8 +31,8 @@
     // Verifica se alguma tecla e pressionada
     $(document).keydown(function (e) { 
       if(e.which == 32) key(); 
-      if(e.which == 71) charge(); 
-      if(e.which == 67) verific(); 
+      if(e.which == 71) verific(); 
+      if(e.which == 67) charge(); 
       if(e.which == 70) stop();
     });
 
